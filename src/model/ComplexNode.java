@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ComplexNode extends model.Node {
+public class ComplexNode extends Node {
     private List<Node> nodeList = new ArrayList<>();
 
     @Override
     public String evaluate() {
-        return nodeList.stream().map(model.Node::evaluate).collect(Collectors.joining());
+        return nodeList.stream().map(Node::evaluate).collect(Collectors.joining());
     }
 
     public ComplexNode(String value) {

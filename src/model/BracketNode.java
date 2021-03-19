@@ -1,8 +1,8 @@
 package model;
 
-public class BracketNode extends model.Node {
+public class BracketNode extends Node {
     private int repeatsCount;
-    private model.Node subNode;
+    private Node subNode;
 
     @Override
     public String evaluate() {

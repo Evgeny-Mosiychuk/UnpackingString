@@ -1,6 +1,6 @@
 package model;
 
-public class SymbolNode extends model.Node {
+public class SymbolNode extends Node {
     private char value;
 
     SymbolNode(char ch) {
